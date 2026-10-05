@@ -17,3 +17,5 @@ data/raw/*
 .env
 EOF
 touch data/raw/.gitkeep
+
+logs
