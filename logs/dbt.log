@@ -1,0 +1,114 @@
+[0m21:59:44.241081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f99a83694c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f99a8510260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f99aa8c8c80>]}
+
+
+============================== 21:59:44.245348 | a6a92f4a-9a44-48d3-bca6-ece8dd3c428a ==============================
+[0m21:59:44.245348 [info ] [MainThread]: Running with dbt=1.12.5
+[0m21:59:44.245979 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'version_check': 'True', 'write_json': 'True', 'log_cache_events': 'False', 'use_colors': 'True', 'partial_parse': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'introspect': 'True', 'invocation_command': 'dbt init retail_dw', 'static_parser': 'True', 'empty': 'None', 'indirect_selection': 'eager', 'warn_error': 'None', 'maximum_seed_size_mib': '1', 'hints_enabled': 'True', 'log_format': 'default', 'profiles_dir': '/home/chanuka002/.dbt', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False'}
+[0m21:59:44.265770 [info ] [MainThread]: Creating dbt configuration folder at /home/chanuka002/.dbt
+[0m21:59:44.268180 [debug] [MainThread]: Starter project path: /home/chanuka002/GCP Projects/retail-data-pipeline/venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m21:59:44.275949 [info ] [MainThread]: Setting up your profile.
+[0m22:03:15.052897 [info ] [MainThread]: Profile retail_dw written to /home/chanuka002/.dbt/profiles.yml using target's profile_template.yml and your supplied values.
+[0m22:03:15.056561 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m22:03:15.057332 [info ] [MainThread]: dbt version: 1.12.5
+[0m22:03:15.057691 [info ] [MainThread]: python version: 3.12.3
+[0m22:03:15.058007 [info ] [MainThread]: python path: /home/chanuka002/GCP Projects/retail-data-pipeline/venv/bin/python3
+[0m22:03:15.058339 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m22:03:15.135965 [info ] [MainThread]: Using profiles dir at /home/chanuka002/.dbt
+[0m22:03:15.136537 [info ] [MainThread]: Using profiles.yml file at /home/chanuka002/.dbt/profiles.yml
+[0m22:03:15.136911 [info ] [MainThread]: Using dbt_project.yml file at /home/chanuka002/GCP Projects/retail-data-pipeline/retail_dw/dbt_project.yml
+[0m22:03:15.137268 [info ] [MainThread]: adapter type: bigquery
+[0m22:03:15.137611 [info ] [MainThread]: adapter version: 1.12.1
+[0m22:03:15.274826 [info ] [MainThread]: Configuration:
+[0m22:03:15.275353 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:03:15.275730 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:03:15.276110 [info ] [MainThread]: Required dependencies:
+[0m22:03:15.276500 [debug] [MainThread]: Executing "git --help"
+[0m22:03:15.293692 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:03:15.294241 [debug] [MainThread]: STDERR: "b''"
+[0m22:03:15.294568 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:03:15.294939 [info ] [MainThread]: Connection:
+[0m22:03:15.295328 [info ] [MainThread]:   method: oauth
+[0m22:03:15.295666 [info ] [MainThread]:   database: retail-data-pipeline-510614
+[0m22:03:15.295995 [info ] [MainThread]:   execution_project: retail-data-pipeline-510614
+[0m22:03:15.296318 [info ] [MainThread]:   schema: retail_dw
+[0m22:03:15.296637 [info ] [MainThread]:   location: US
+[0m22:03:15.296953 [info ] [MainThread]:   priority: interactive
+[0m22:03:15.297293 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m22:03:15.297662 [info ] [MainThread]:   reservation: None
+[0m22:03:15.297983 [info ] [MainThread]:   impersonate_service_account: None
+[0m22:03:15.298300 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m22:03:15.298613 [info ] [MainThread]:   job_retries: 1
+[0m22:03:15.298943 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m22:03:15.299257 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m22:03:15.299573 [info ] [MainThread]:   job_link_info_level_log: False
+[0m22:03:15.299912 [info ] [MainThread]:   timeout_seconds: 300
+[0m22:03:15.300227 [info ] [MainThread]:   client_id: None
+[0m22:03:15.300592 [info ] [MainThread]:   token_uri: None
+[0m22:03:15.300921 [info ] [MainThread]:   compute_region: None
+[0m22:03:15.301234 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m22:03:15.301562 [info ] [MainThread]:   gcs_bucket: None
+[0m22:03:15.301877 [info ] [MainThread]:   dataproc_batch: None
+[0m22:03:15.302377 [info ] [MainThread]: Registered adapter: bigquery=1.12.1
+[0m22:03:15.432179 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m22:03:15.432671 [debug] [MainThread]: On debug: select 1 as id
+[0m22:03:15.433119 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:03:17.844731 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=retail-data-pipeline-510614&j=bq:US:83aa9130-1c4c-427f-8627-8a25edc2416a&page=queryresults
+[0m22:03:18.297651 [debug] [MainThread]: SQL status: OK in 0.452 seconds
+[0m22:03:18.753934 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:03:18.754484 [info ] [MainThread]: [32mAll checks passed![0m
+[0m22:03:18.754935 [info ] [MainThread]: Your new dbt project "retail_dw" was created!
+Initialized new project in /home/chanuka002/GCP Projects/retail-data-pipeline/retail_dw/retail_dw
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:03:18.755658 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 202.43428, "process_in_blocks": "268456", "process_kernel_time": 0.625084, "process_mem_max_rss": "248252", "process_out_blocks": "96", "process_user_time": 3.82467}
+[0m22:03:18.756357 [debug] [MainThread]: Command `dbt init` succeeded at 22:03:18.756250 after 202.44 seconds
+[0m22:03:18.756786 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:03:18.757158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f996e07a480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f996dfe7680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f996e8f6780>]}
+[0m22:03:18.757561 [debug] [MainThread]: Flushing usage events
+[0m22:03:19.898715 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:42:28.852280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f80a769c650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f80aa578ef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f80a769c740>]}
+
+
+============================== 01:42:28.858033 | 671d697c-9c2b-4b96-a973-bb656fe13dea ==============================
+[0m01:42:28.858033 [info ] [MainThread]: Running with dbt=1.12.5
+[0m01:42:28.858671 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'version_check': 'True', 'profiles_dir': '/home/chanuka002/.dbt', 'hints_enabled': 'True', 'invocation_command': 'dbt run --select stg_orders', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'indirect_selection': 'eager', 'target_path': 'None', 'printer_width': '80', 'use_colors': 'True', 'static_parser': 'True', 'no_print': 'None', 'log_format': 'default', 'log_path': 'logs', 'maximum_seed_size_mib': '1', 'partial_parse': 'True', 'debug': 'False', 'empty': 'False', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'introspect': 'True', 'write_json': 'True'}
+[0m01:42:28.859184 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/chanuka002/GCP Projects/retail-data-pipeline/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m01:42:28.861287 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.12739372, "process_in_blocks": "65912", "process_kernel_time": 0.245197, "process_mem_max_rss": "107440", "process_out_blocks": "8", "process_user_time": 1.530034}
+[0m01:42:28.862217 [debug] [MainThread]: Command `dbt run` failed at 01:42:28.862041 after 0.13 seconds
+[0m01:42:28.862869 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f80a7430e60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f80a769c740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f80a769c650>]}
+[0m01:42:28.863489 [debug] [MainThread]: Flushing usage events
+[0m01:42:29.930931 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:58:44.077639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fab5235b500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fab52358170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fab5163be90>]}
+
+
+============================== 01:58:44.082642 | c264b25a-8059-46ed-87b6-5e5f802075ea ==============================
+[0m01:58:44.082642 [info ] [MainThread]: Running with dbt=1.12.5
+[0m01:58:44.083329 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/home/chanuka002/.dbt', 'warn_error': 'None', 'hints_enabled': 'True', 'use_colors': 'True', 'static_parser': 'True', 'maximum_seed_size_mib': '1', 'introspect': 'True', 'invocation_command': 'dbt run --select staging.*', 'target_path': 'None', 'version_check': 'True', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'debug': 'False', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'empty': 'False', 'quiet': 'False', 'write_json': 'True', 'printer_width': '80', 'log_cache_events': 'False', 'log_format': 'default', 'log_path': 'logs', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None'}
+[0m01:58:44.083898 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/chanuka002/GCP Projects/retail-data-pipeline/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m01:58:44.085294 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.113359615, "process_in_blocks": "56792", "process_kernel_time": 0.264717, "process_mem_max_rss": "109656", "process_out_blocks": "16", "process_user_time": 1.480458}
+[0m01:58:44.085853 [debug] [MainThread]: Command `dbt run` failed at 01:58:44.085738 after 0.11 seconds
+[0m01:58:44.086205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fab517bb710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fab515edac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fab515eec30>]}
+[0m01:58:44.086567 [debug] [MainThread]: Flushing usage events
+[0m01:58:45.161468 [debug] [MainThread]: An error was encountered while trying to flush usage events

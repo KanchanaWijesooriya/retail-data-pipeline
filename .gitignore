@@ -1,0 +1,19 @@
+cat > .gitignore << 'EOF'
+venv/
+__pycache__/
+*.pyc
+
+# dbt
+retail_dw/target/
+retail_dw/dbt_packages/
+retail_dw/logs/
+
+# raw data - too large, and shouldn't be in git anyway (belongs in GCS)
+data/raw/*
+!data/raw/.gitkeep
+
+# credentials - never commit these
+*.json
+.env
+EOF
+touch data/raw/.gitkeep
