@@ -18,4 +18,4 @@ data/raw/*
 EOF
 touch data/raw/.gitkeep
 
-logs
+logs/
